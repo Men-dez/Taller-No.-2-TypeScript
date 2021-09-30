@@ -1,0 +1,35 @@
+.container{
+    width: 1800px;
+    height: 1000px;
+    background-color: white;
+    margin-left: 600px;
+    margin-top: 150px;
+
+}
+
+.row{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+}
+
+.col{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 1000px;
+    width: 200px;
+
+}
+
+.center{
+    text-align:center;
+}
+
+.Input{
+    width: 380px;
+    height: 40px;
+}

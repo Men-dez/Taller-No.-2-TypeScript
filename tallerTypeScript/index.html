@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" >
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Julián Andrés Méndez</h1>
+                <img class="img-fluid max-width: 100% height: auto" src="./avatar.jpeg" alt="Avatar">`
+                <div class="card" style="width: 40rem;">
+                    <div class="card-body">
+                        <h4 class="center">Datos Personales</h4>
+                        <table class="table" id>
+                            <thead>
+                                <tr>
+                                    <th>Código</th>
+                                    <th>Cédula</th>
+                                    <th>Edad</th>
+                                    <th>Dirección</th>
+                                    <th>Celular</th>
+                                </tr>
+                            </thead>
+                            <tbody id="infoStudent"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col" >
+                <div class="card" style="width: 35rem; margin-left: 130px;">
+                    <div class="card-body"> 
+                        <h2>Cursos Actuales</h2>
+                        <form style="margin:20px;">
+                            <div class="form-row">
+                              <div>
+                                  <input type="text" class="Input" id="search-box" placeholder="Filtrar por nombre">
+                              </div>
+                              <div>
+                                  <button type="button" id="button-filterByName" class="btn btn-success">Aplicar</button>
+                              </div>
+                            </div>
+                        </form>
+
+                        <form style="margin:20px;">
+                            <div class="form-row">
+                              <div>
+                                  <input type="text" class="Input" id="creds-box" placeholder="Filtrar por rango de créditos. Formato: min-max">
+                              </div>
+                              <div>
+                                  <button type="button" id="button-filterByCreds" class="btn btn-success">Aplicar</button>
+                              </div>
+                            </div>
+                        </form>
+
+                        <table class="table" id="tableInfo">
+                            <thead class="table-dark">
+                                <tr>
+                                    <td>Curso</td>
+                                    <td>Profesor</td>
+                                    <td>Créditos</td>
+                                </tr>
+                            </thead>
+                            <tbody id="courses"></tbody>
+                        </table> 
+
+                        <h4 class="center">Total creditos: <label id="creds"></label> </h4>
+                        
+
+                    </div>
+                </div>
+            </div>
+    </div>
+    <script type="module" src="./scripts/course.js" ></script>
+    <script type="module" src="./scripts/dataCourses.js" ></script>
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
